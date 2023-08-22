@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: blue;
+    max-width: 100%;
+    
+}
+
+header .container{
+    max-width: 1024px;
+    width: 100%;
+    padding: 16px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container h1,
+header .container #links a{
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+header .container #links{
+    display: flex;
+    list-style: none;
+}
+
+header .container #links a{
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+main{
+    background-color: aliceblue;
+}
+
+main #container-sobre{
+    max-width: 1024px;
+    width: 100%;
+    padding: 16px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main #container-sobre img{
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+main #container-sobre .sobre{
+    width: 100%;
+    padding-left: 16px;
+}
+
+main #container-sobre .sobre h2, 
+main #container-calcados .container h2{
+    color: blue;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid blue;
+    margin-bottom: 16px;
+}
+
+main #container-calcados{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main #container-calcados .container{
+    width: 100%;
+}
+
+main #container-calcados .container .lista-calcados{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+main #container-calcados .container .lista-calcados li{
+    list-style: none;
+    max-width: 23%;
+    margin-bottom: 16px;
+}
+
+main #container-calcados .container .lista-calcados li img,
+main #container-calcados .container .lista-calcados li h3,
+main #container-calcados .container .lista-calcados li p,
+main #container-calcados .container .lista-calcados li button{
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+main #container-calcados .container .lista-calcados li p{
+    font-size: 14px;
+}
+
+main #container-calcados .container .lista-calcados li button{
+    width: 100%;
+    padding: 8px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main #container-calcados .container .lista-calcados li button:hover{
+    background-color: rgb(35, 35, 131);
+}
+
+
+
+
+
+
+@media screen and (min-width:641px) and (max-width:1023px){
+
+    header{
+
+        max-width: 1023px;
+    }
+
+    header .container{
+        max-width: 1023px;
+        width: 90%;
+        padding: 16px 0;
+        margin: 0 auto;
+    }
+
+    main #container-sobre{
+        max-width: 1023px;
+        width: 90%; 
+        display: block;
+    }
+
+    main #container-sobre .sobre{
+        width: 100%; 
+        padding: 20px 0 20px 0;
+    }
+
+    main #container-sobre img{
+        max-width: 1023px;
+        width: 100%; 
+    }
+
+
+    main #container-calcados .container{
+        max-width: 1023px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main #container-calcados .container .lista-calcados{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main #container-calcados .container .lista-calcados li{
+        max-width: 48%;
+    }
+ 
+}
+
+
+@media screen and (max-width:640px){
+
+    header{
+        max-width: 640px;
+    }
+
+    header .container{
+        max-width: 641px;
+        width: 60%;
+        padding: 24px 0;
+        margin: 0 auto;
+    }
+
+    header .container #links{
+        display: block;
+    }
+
+    main #container-sobre{
+        max-width: 641px;
+        width: 70%; 
+        display: block;
+    }
+
+    main #container-sobre .sobre{
+        width: 90%; 
+        padding: 20px 0 20px 0;
+    }
+
+    main #container-sobre img{
+        max-width: 641px;
+        width: 90%; 
+    }
+
+
+    main #container-calcados .container{
+        max-width: 641px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    main #container-calcados .container .lista-calcados{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main #container-calcados .container .lista-calcados li{
+        max-width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
